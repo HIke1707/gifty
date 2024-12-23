@@ -3,12 +3,12 @@ import { getDatabase } from 'firebase/database';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-apiKey: "AIzaSyDFI8Y_LdqtrQlw2ajhNq1LYdibLLP2hBY",
-authDomain: "gifty-37c8f.firebaseapp.com",
-projectId: "gifty-37c8f",
-storageBucket: "gifty-37c8f.firebasestorage.app",
-messagingSenderId: "926219705031",
-appId: "1:926219705031:web:6aa2b883689a67ef06fce2",
+apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+appId: import.meta.env.VITE_FIREBASE_APP_ID,
 measurementId: "G-M8EF2PM0S3"
 };
 
